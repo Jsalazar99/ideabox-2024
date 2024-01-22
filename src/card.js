@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Card({ title, description, id }){
     return (
       <div className='card'>
@@ -7,3 +9,5 @@ function Card({ title, description, id }){
       </div>
     )
   }
+
+  export default Card;

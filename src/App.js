@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Ideas from './ideas';
+// import Card from '.cards';
 
 function App() {
  

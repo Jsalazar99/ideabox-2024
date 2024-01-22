@@ -1,3 +1,6 @@
+import React from 'react';
+import Card from './card';
+
 function Ideas({ ideas }){
 
     const ideaCards = ideas.map(idea => {
@@ -17,3 +20,5 @@ function Ideas({ ideas }){
       </div>
     )
   }
+
+  export default Ideas;
