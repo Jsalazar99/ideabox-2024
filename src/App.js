@@ -1,12 +1,21 @@
 import { useState } from 'react';
 import Ideas from './ideas';
 import './App.css';
-import Form from './Form';
+import Form from './form';
 // import Card from '.cards';
 
-function App() {
+export default function App() {
  
-  const [ideas,setIdeas] = useState([])
+  const [ideas, setIdeas] = useState([])
+
+  function addIdea(newIdea) {
+    setIdeas([...ideas, newIdea]);
+  };
+
+  const deleteIdea = (id) => {
+    const filteredIdeas = ideas.filter((idea) => idea.id !== id);
+    setIdeas(filteredIdeas);
+  };
 
  return (
     <main className='App'>
@@ -18,4 +27,4 @@ function App() {
  )
 }
 
-export default App;
+// export default App;
