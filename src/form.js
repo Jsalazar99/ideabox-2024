@@ -14,7 +14,7 @@ export default function Form({ addIdea }) {
       description
     }
     addIdea(newIdea);
-    clearInput();
+    // clearInput();
   }
 
   function clearInput() {
@@ -23,8 +23,9 @@ export default function Form({ addIdea }) {
   }
 
   return (
-    <form>
+    <form className='body-input'>
     <input
+      className='body-input'
       type='text'
       placeholder='Title'
       name='title'
@@ -33,6 +34,7 @@ export default function Form({ addIdea }) {
     />
 
     <input
+      className='body-input'
       type='text'
       placeholder='Description'
       name='description'
@@ -40,7 +42,7 @@ export default function Form({ addIdea }) {
       onChange={event => setDescription(event.target.value)}
     />
 
-    <button onClick={event => submitIdea(event)}>SUBMIT</button>
+    <button className='form-styles form-btn q-btn' onClick={event => submitIdea(event)}>SUBMIT</button>
   </form>
   )
 }

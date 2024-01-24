@@ -17,7 +17,7 @@ const Ideas = ({ ideas, deleteIdea }) => {
     })
   
     return (
-      <div className='ideas-container'>
+      <div className='ideas-container idea-card'>
         {ideaCards}
       </div>
     )
