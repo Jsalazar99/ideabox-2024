@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Ideas from './ideas';
+import './App.css';
+import Form from './Form';
 // import Card from '.cards';
 
 function App() {
@@ -10,7 +12,8 @@ function App() {
     <main className='App'>
       <h1>IdeaBox Project</h1>
       {!ideas.length && <h2>No ideas yet -- add some!</h2> }
-      <Ideas ideas={ideas} />
+      <Form addIdea={addIdea} />
+      <Ideas ideas={ideas} deleteIdea={deleteIdea} />
     </main>
  )
 }
