@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Introduction 
+
+To develop an idea generator that enables the creation of idea cards with features such as storage, deletion, and search capabilities. Each idea is presented as a card on the webpage, allowing users to edit saved ideas and modify the original concept as needed.
+
+## Project Goals
+- Create functional components
+- Use state and props to manage application data
+- Use Hooks with functional components
+- Create a controlled form
+- Use JSX
+
 ## Available Scripts
 
 In the project directory, you can run:
