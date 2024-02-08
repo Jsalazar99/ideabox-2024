@@ -14,7 +14,7 @@ export default function Form({ addIdea }) {
       description
     }
     addIdea(newIdea);
-    // clearInput();
+    // clearInput(); - keeping fields populated for now
   }
 
   function clearInput() {
