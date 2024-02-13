@@ -5,4 +5,7 @@
     grid-gap: 20px; */
     
   }
-  
+.card:hover {
+  border: 1px solid #999;
+  box-shadow: 2px 2px #999;
+}  
